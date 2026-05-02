@@ -110,6 +110,7 @@ li {font-family: Georgia, 'Times New Roman', Times, serif;
         a.fifth-link:hover {color:#FFEEBC;}
 
 
+
 img {text-align: center;
      display: block;
      margin-bottom: 60px;
@@ -154,4 +155,92 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   color: #FFFFFF;
   text-align: center;
+}
+
+.form-container {
+    background-color: #333;
+    border: 3px solid #FF0000;
+    padding: 25px;
+    width: 380px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px #FF00FF;
+}
+
+#userForm label {
+    color: white;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#favoriteInput {
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #525252;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#submitBtn {
+    background-color: #FF0000;
+    color: white;
+    font-family: Impact, sans-serif;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+#submitBtn:hover {
+    background-color: #fc0;
+    color: black;
+   transform: scale(1.1) rotate(-2deg);
+    box-shadow: 4px 4px 0px #FF00FF;
+}
+
+#greetingDisplay {
+    color: #fc0;
+    font-family: "copperplate", serif;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 30px;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 40px; 
+        margin-top: 20px;
+    }
+
+    img, table {
+        width: 90% !important; 
+    }
+
+    .form-container {
+        width: 85%;
+        padding: 15px;
+        box-shadow: 4px 4px 0px #FF00FF;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    ul {
+        padding-left: 20px;
+        text-align: left;
+    }
 }
